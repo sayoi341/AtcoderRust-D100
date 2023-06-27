@@ -1,0 +1,30 @@
+{
+	"name": "atcoder-rust",
+	"workspaceFolder": "/workspaces/atcoder-rust/",
+	"dockerComposeFile": ["../docker/docker-compose.yaml"],
+	"service": "app",
+	"customizations": {
+		"vscode": {
+		  "extensions": [
+			"wmaurer.change-case",
+			"ms-vscode.cpptools",
+			"adam-bender.commit-message-editor",
+			"mikestead.dotenv",
+			"editorconfig.editorconfig",
+			"usernamehw.errorlens",
+			"github.copilot",
+			"eamodio.gitlens",
+			"visualstudioexptteam.vscodeintellic",
+			"pkief.material-icon-theme",
+			"christian-kohler.path-intellisense",
+			"esbenp.prettier-vscode",
+			"tabnine.tabnine-vscode",
+			"hbenl.vscode-test-explorer",
+			"gruntfuggly.todo-tree"
+		  ]
+		}
+	  },
+	"features": {
+		"ghcr.io/devcontainers/features/rust:1": {}
+	}
+}

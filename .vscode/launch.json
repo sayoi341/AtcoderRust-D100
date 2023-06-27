@@ -1,0 +1,47 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'atcoder'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=atcoder",
+                    "--package=atcoder"
+                ],
+                "filter": {
+                    "name": "atcoder",
+                    "kind": "bin"
+                }
+            },
+            "terminal": "integrated",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'atcoder'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=atcoder",
+                    "--package=atcoder"
+                ],
+                "filter": {
+                    "name": "atcoder",
+                    "kind": "bin"
+                }
+            },
+            "terminal": "integrated",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
